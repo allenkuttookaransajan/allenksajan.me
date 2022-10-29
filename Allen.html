@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="icon" type = "image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="Allen.css">
+  <script src="https://kit.fontawesome.com/bacd36efc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+         <h1>A.</h1>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#Project">Project</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="title">
+      <h1>Hi, this is</h1>
+      <div class="back-text">
+          <span>A</span>
+          <span>L</span>
+          <span>L</span>
+          <span>E</span>
+          <span>N</span>    
+      </div>
+    </div>
+  </div>
+<!------Project------->
+<div id="Project">
+  <video autoplay loop id="myVideo">
+  <source src="Blend.mp4" type="video/mp4">
+  </video>
+</div>
+<script>
+  let spanTexts = document.getElementsByTagName('span');
+      window.onload = function(){
+        for(spanText of spanTexts){
+            spanText.classList.add("active");
+        }
+      }
+  var video = document.getElementById("myVideo");
+</script>
+<div id="other">
+  <div class="container">
+    <h1 class="sub-title">Blender Works</h1>
+    <div class="Blender-list">
+      <div>
+        <i class="fa-solid fa-circle"></i>
+        <h2>The Morphed Sun</h2>
+        <p>The various forms of the Sun under different background</p>
+        <a href="https://opensea.io/collection/themorphedsun" target="_blank" rel="noopener noreferrer">learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-landmark"></i>
+        <h2>The Forgotten Obelisk</h2>
+        <p>Inspired by the ancient and mythical nature of Obelisk</p>
+        <a href="https://opensea.io/collection/forgotten-obelisk" target="_blank" rel="noopener noreferrer">learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="code">
+  <div class="container">
+    <h1 class="sub-title">Code Projects</h1>
+      <div class="code-list">
+        <div class="codes">
+            <img src="face.jpg">
+            <div class="layer">
+              <h3>Face Detection</h3>
+              <p>The method by which the programme detects the face is by using haar cascades</p>
+              <a href="https://github.com/Blitzenator/Face-Detection"target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="codes">
+          <img src="bank.jpg">
+          <div class="layer">
+              <h3>Bank Management System</h3>
+              <p>The customer can use the bank management system to deposit and withdraw money from their account</p>
+              <a href="https://github.com/Blitzenator/Bank-Management-System"target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<!--about-->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col1">
+        <img src="photo.JPG">
+      </div>
+      <div class="col2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Allen Kuttookaran Sajan is an aspiring programmer with intrests in machine learning and ocassionaly dabbles in animation. Allen enjoys listening to music, taking walks and occasionly do stand-up.
+          <br>
+          <br>
+          ────────────────────────▄▀▄─────▄▀▄────────────────────────────<br>
+          ───────────────────────▄█░░▀▀▀▀▀░░█▄───────────────────────────<br>
+          ───────────────────▄▄──█░░░░░░░░░░░█──▄▄───────────────────────<br>
+          ──────────────────█▄▄█─█░░▀░░┬░░▀░░█─█▄▄█──────────────────────<br>
+          <br>
+███████████████████████████████████████████████████████████████
+█─█─█▄─▄▄─█▄─▄███▄─▄███─▄▄─███▄─█▀▀▀█─▄█─▄▄─█▄─▄▄▀█▄─▄███▄─▄▄▀█
+█─▄─██─▄█▀██─██▀██─██▀█─██─████─█─█─█─██─██─██─▄─▄██─██▀██─██─█
+▀▄▀▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▀▀▀▀▄▄▄▀▄▄▄▀▀▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▀▀
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--contact-->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="Sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>allenksajan@gmail.com</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/allen.sajan.5/"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/its_alleeen_/?hl=en"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/Blitzenator"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+          <a href="https://discordapp.com/users/377493023342198795"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
+        </div>
+        <div class="cv">
+          <a href="CV-Allen Kuttookaran Sajan.pdf" download class="button-49"><button class="button-49" role="button">Download CV</button></a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="Submit" class='button-49' role="button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="copyright">
+  <p>Made with <i class="fa-solid fa-heart"></i> by Allen</p>
+</div>
+</body>
+</html>
