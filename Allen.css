@@ -116,7 +116,7 @@ nav ul li a:hover::after{
   padding: 30px 0;
 }
 .sub-title{
-  -webkit-text-stroke: 3px rgba(255, 255, 255, 0.3);
+  font-size: 15px;
   margin-top: 50px;
 }
 .Blender-list{
@@ -231,7 +231,9 @@ nav ul li a:hover::after{
   flex-wrap: wrap;
 }
 .col1{
-  flex-basis: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
 .col1 img{
   width: 100%;
@@ -429,4 +431,62 @@ form btn{
 }
 .copyright i{
   color: #ff004f;
+}
+/*-------css for small screen------*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+  .title h1{
+    font-size: 30px;
+  }
+  .back-text span{
+    font-size: 100px;
+  }
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+  }
+  nav ul{
+    background-color: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 15;
+    transition: right 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin:25px;
+  }
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .col1{
+    flex-basis: 100%;
+  }
+  .col2{
+    font-size: 7px;
+  }
+  .sub-title{
+    text-align: center;
+    font-size: 30px;
+  }
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+  }
+  .copyright{
+    font-size: 14px;
+  }
+}
+#msg{
+  color: #61b752;
+  margin-top: 30px;
+  display: block;
 }
