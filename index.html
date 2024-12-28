@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta name="viewport" content="width=device-width, intial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="icon" type = "image/x-icon" href="logo.png">
+  <link rel="icon" type = "image/x-icon" href="Images/logo.png">
   <link rel="stylesheet" href="Allen.css">
   <script src="https://kit.fontawesome.com/bacd36efc2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
   <div id="header">
     <div class="container">
       <nav>
-         <h1>A.</h1>
+        <a href="#header"><img src="Images/logo-header.png" alt="logo" width="60" height="50"></a>
         <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#Project">Project</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#header">HOME</a></li>
+          <li><a href="Pages/projects.html">PROJECTS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
           <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
         </ul>
         <i class="fa-solid fa-compass" onclick="openmenu()"></i>
       </nav>
     </div>
   </div>
+
   <div class="hero">
     <div class="title">
       <h1>Hi, this is</h1>
@@ -35,12 +39,15 @@
       </div>
     </div>
   </div>
+
 <!------Project------->
+
 <div id="Project">
   <video autoplay loop id="myVideo">
-  <source src="Blend.mp4" type="video/mp4">
+  <source src="Images\Blend.mp4" type="video/mp4">
   </video>
 </div>
+
 <script>
   let spanTexts = document.getElementsByTagName('span');
       window.onload = function(){
@@ -52,11 +59,12 @@
 </script>
 
 <div id="code">
+
   <div class="container">
     <h1 class="sub-title">Projects</h1>
       <div class="code-list">
         <div class="codes">
-            <img src="face.jpg">
+            <img src="Images/face.jpg">
             <div class="layer">
               <h3>Face Detection</h3>
               <p>The method by which the programme detects the face is by using haar cascades</p>
@@ -64,7 +72,7 @@
             </div>
         </div>
         <div class="codes">
-          <img src="bank.jpg">
+          <img src="Images\bank.jpg">
           <div class="layer">
               <h3>Bank Management System</h3>
               <p>The customer can use the bank management system to deposit and withdraw money from their account</p>
@@ -72,7 +80,7 @@
           </div>
         </div>
         <div class="codes">
-          <img src="Grocery.jpg">
+          <img src="Images/Grocery.jpg">
           <div class="layer">
             <h3>Grocery Shop</h3>
             <p>A Online Grocery Shop app made using Flutter App</p>
@@ -82,6 +90,7 @@
       </div>
   </div>
 </div>
+
 <div id="other">
   <div class="container">
     <h1 class="sub-title">Blender Works</h1>
@@ -107,12 +116,14 @@
     </div>
   </div>
 </div>
+
 <!--about-->
+
 <div id="about">
   <div class="container">
     <div class="row">
       <div class="col1">
-        <img src="photo.jpg">
+        <img src="Images/photo.jpg">
       </div>
       <div class="col2">
         <h1 class="sub-title">About Me</h1>
@@ -134,7 +145,9 @@
     </div>
   </div>
 </div>
+
 <!--contact-->
+
 <div id="contact">
   <div class="container">
     <div class="row">
@@ -149,7 +162,7 @@
           <a href="https://www.behance.net/allenksajan"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-behance"></i></a>
         </div>
         <div class="cv">
-          <a href="CV-Allen Kuttookaran Sajan.pdf" download class="button-49"><button class="button-49" role="button">Download CV</button></a>
+          <a href="Documents\CV-Allen Kuttookaran Sajan.pdf" download class="button-49"><button class="button-49" role="button">Download CV</button></a>
         </div>
       </div>
       <div class="contact-right">
@@ -164,9 +177,11 @@
     </div>
   </div>
 </div>
+
 <div class="copyright">
   <p>Made with <i class="fa-solid fa-heart"></i> by Allen</p>
 </div>
+
 <script>
   var sidemenu=document.getElementById("sidemenu");
   function openmenu(){
@@ -176,6 +191,7 @@
     sidemenu.style.right = "-200px";
   }
 </script>
+
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzdRPIdR0WQbKP1-BP7Ie4TipjuURzedlJTA-B28eIw9-yxrkKPO4VHs_iidEquKvHB/exec'
   const form = document.forms['submit-to-google-sheet']
