@@ -22,9 +22,18 @@ nav{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: white;
+  color: black;
+  padding: 10px 10%; /* Adjust padding as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for separation */
+  position: fixed; /* Fix the navbar to the viewport */
+  top: 0; /* Position it at the very top */
+  width: 100%; /* Make sure it spans the full width of the page */
+  z-index: 1000; /* Ensure it stays above other elements */
 }
 nav h1{
   font-size: 50px;
+  font-family: roboto-regular;
 }
 nav ul li{
   display: inline-block;
@@ -32,7 +41,7 @@ nav ul li{
   margin: 10px 20px;
 }
 nav ul li a{
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -41,7 +50,7 @@ nav ul li a::after{
   content: "";
   width: 0;
   height: 3px;
-  background-color: #ffff00;
+  background-color: #000;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -489,4 +498,75 @@ nav .fa-solid{
   color: #61b752;
   margin-top: 30px;
   display: block;
+}
+.roboto-thin {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: italic;
 }
